@@ -1,0 +1,10 @@
+Databaza sa 3 tablice.
+
+Tablica 'zaposlenici' sadrzi sve zaposlenike tvrtke, njihove osobne podatke i placu.
+Tablica 'odjeli' sadrzi sve odjele u tvrtci.
+Tablica 'odjeli_zaposlenici' sadrzi sve odnose izmedju zposlenika odjela.
+
+sudo msyq - p < tvrtka_db.sql  #Kreiranje data baze kao sudo user
+sudo mysql -p < procedure.sql #Kreiranje procudure koja racuna prosjecnu placu zaposlenika
+sudo mysql -p < avg_voditelji.sql #Upit koji izlistava prosjecnu placu voditelja
+sudo mysql -p < zaposlenici_place.sql #Upit koji izlistava sve zaposlenike i njihove place
